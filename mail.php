@@ -12,5 +12,5 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:index.html");
+header("./index.html");
 ?>
