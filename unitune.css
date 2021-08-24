@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+   overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*                      ---------------         Header Element          --------            */
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    background-color: rgba(231, 12, 12, 0.877);
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 50px;
+    box-shadow:  
+    /* -- right-round shadow faded  -- */
+    0px 0.5px 6px  rgba(73, 72, 72, 0.822),
+    /* -- bottom clear shadow --*/
+    /* -- top left inset --*/
+    inset 1.5px 0.5px 8px  rgba(141, 4, 4, 0.692),
+    /*-- bottom right inset --*/
+    inset -1.5px -1px 8px rgba(143, 6, 6, 0.76);
+    overflow-y: hidden;
+    
+}
+   
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-attachment: center;
+    height: 10vw;
+    background-color: white;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    
+}
+
+nav a img{
+    margin-top: -10%;
+    margin-bottom: -10%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 15vw;
+    height: 110%;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    width: 20vw;
+    margin-left: 10px;
+   
+    
+}
+
+nav ul li{
+    height: 100%;
+    padding-left: 10px;
+    list-style: none;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    overflow-y: hidden;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    
+}
+ nav ul li a:hover{
+     background-color: rgb(255, 255, 255);
+     color: rgb(219, 13, 13);
+     text-decoration: underline 2px;
+     text-underline-offset: 5px;
+    
+     box-shadow:  
+     inset 0.5px 1.5px 6px rgba(170, 169, 169, 0.87),
+     inset -0.5px -1.5px 5px rgba(167, 165, 165, 0.863);
+                
+ }
+
+@keyframes move{
+    from {margin-left: -40%;}
+    to {margin-left: 40%;}
+}
+.box{
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    margin-top: 75px;
+}
+.load{
+    position: relative;
+    height: 55vh;
+    width: 65vw;
+    background-color: rgb(196, 193, 193);
+    display: flex;
+    justify-content:center;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -1%;
+    position: absolute;
+    z-index: 9;
+    
+}
+.bakkie{
+    width: 100%;
+    height: 80vh;
+}
+.rectangle{
+    background-color: rgb(255, 0, 0);
+    height: 40%;
+    width: 20px;
+    margin-left: 50%;
+    animation-name: move;
+    animation-duration: 3.6s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border-radius: 50%;
+}
+.rectangle2{
+    background-color: rgb(255, 0, 0);
+    align-self: center;
+    height:15%;
+    width: 15px;
+    margin-left: 50%;
+    animation-name: move;
+    animation-duration: 3.0s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border-radius: 50%;
+}
+.rectangle3{
+    background-color: rgb(255, 0, 0);
+    align-self: flex-end;
+    height: 40%;
+    width: 18px;
+    margin-left: 50%;
+    animation-name: move;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border-radius: 50%;
+}
+.slogan{
+    
+    align-self: center;
+    height: 150px;
+}
+.slogan img{
+    width: 100%;
+    height: 60%
+}
+
+@media screen and (max-width: 900px){
+    
+    .logo{
+        width:100vw;
+    }
+    .load{
+        width: 180vw;
+    }
+   
+}
+
+@media screen and (max-width: 400px){
+   
+    
+    .load{
+       
+        width: 100vw;
+    }
+    .logo{
+        width:250vw;
+    }
+}
