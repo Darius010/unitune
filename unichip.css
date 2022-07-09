@@ -1,0 +1,8 @@
+.unichip1 img{
+    position: absolute;
+}
+.unichip h1{
+    margin-top: 80px;
+    color: aliceblue;
+    z-index: 1000;
+}

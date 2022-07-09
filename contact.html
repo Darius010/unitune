@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./unitune.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">UniChip</a></li>
+            <li><a href="./unichip.html">UniChip</a></li>
         </ul>
         <a href="#" class='image'><img src="./Brand.png" alt=""></a>
         <ul >
             <li><a href="#">Services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a class="active" href="./contact.html">Contact</a></li>
         </ul>
 
     </nav>
@@ -30,38 +31,58 @@
 
 <div class="form1">
  
-<!--- Contact Form-->
-    <div class="container">
-          <form action="http://formsubmit.co//dariussnyman@gmail.com" method="POST" >
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name ...">
-      
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email ...">
-          
-      
-          <label for="subject">Message</label>
-          <textarea id="message" name="message" placeholder="Write something ..." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+
        <!--                    MAp Section               -->
        <div class="mapHead">
-         <h2>Where to find us:</h2>
+         <h2>Location :</h2>
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=222%20Lynwood%20Road%20Portion%20222%20of%20the%20Farm%20(The%20Willows,%20Faerie%20Glen,%20Pretoria,%200050&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=222%20Lynwood%20Road%20Portion%20222%20of%20the%20Farm%20(The%20Willows,%20Faerie%20Glen,%20Pretoria,%200050&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
             </iframe>
             <a href="https://yt2.org">yt2</a>
             <br>
-            <style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style>
+            <style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}</style>
             <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-            <style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style>
           </div>
+         
+        </div>
+        <div class="contact">
+          <h2>Contact us:</h2>
+          <i class="fab fa-facebook fa-2x"> <a class="number" href="https://www.facebook.com/Unitune-102722145228905">Unitune</a></i>
+          <br>
+          <i class="fas fa-phone fa-2x"> <a class='number'>076 429 6642</a> </i>
+          <br>
+          <i class="fas fa-at fa-2x"><a href="mailto:">awie@unitune.co.za</a></i>
         </div>
        </div>
+       
+<!--- Contact Form-->
+<div class="container">
+  <h3 class='form_title'>Send us a message: </h3>
+  <form action="http://formsubmit.co//dariussnyman@gmail.com" method="POST" >
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name ...">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email ...">
     
+
+    <label for="subject">Subject</label>
+    <textarea id="message" name="message" placeholder="Your message ..." style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+    
+</div>
+
+<div class="footer">
+  <a href="./index.html">Home</a>
+  <a href="./index.html">UniChip</a>
+  <a href="./index.html">Services</a>
+  
+  <p>Copyright 2021 || Unitune South Africa</p>
 </div>
 
 
